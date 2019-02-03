@@ -2,17 +2,17 @@ package boardgame;
 
 public class Position {
 
-	private Integer rowl;
+	private Integer row;
 	private Integer column;
-	public Position(Integer rowl, Integer column) {
-		this.rowl = rowl;
+	public Position(Integer row, Integer column) {
+		this.row = row;
 		this.column = column;
 	}
-	public Integer getRowl() {
-		return rowl;
+	public Integer getRow() {
+		return row;
 	}
-	public void setRowl(Integer rowl) {
-		this.rowl = rowl;
+	public void setRow(Integer row) {
+		this.row = row;
 	}
 	public Integer getColumn() {
 		return column;
@@ -24,7 +24,7 @@ public class Position {
 	@Override
 	public String toString() {
 		
-		return rowl + ", "+ column; 
+		return row + ", "+ column; 
 	}
 	
 }
