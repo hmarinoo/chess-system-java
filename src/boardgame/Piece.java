@@ -16,16 +16,16 @@ public abstract class  Piece {
 		return board;
 	}
 	
-	public abstract boolean[][] possibleMovies();
+	public abstract boolean[][] possibleMoves();
 	
-	public boolean posibleMovie(Position position){
+	public boolean possibleMovie(Position position){
 	
-		return possibleMovies()[position.getRow()][position.getColumn()];
+		return possibleMoves()[position.getRow()][position.getColumn()];
 		
 	}
 
 	public boolean isThereAnyPossibleMove() {
-		boolean[][] mat = possibleMovies();
+		boolean[][] mat = possibleMoves();
 		for (int i = 0; i< mat.length; i++) {
 			for(int j = 0; j< mat[i].length;j++) {
 				if(mat[i][j] == true) {
